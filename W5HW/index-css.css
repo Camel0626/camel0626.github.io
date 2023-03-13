@@ -1,6 +1,13 @@
-html{
-    background-color: #EAF6FF
-}
+
 p{
-    color: #232528
+    color: #232528;
+    font-weight: bold;
+}
+
+a{
+    color: #FFA400;
+}
+
+a:hover {
+  color: hotpink;
 }
