@@ -1,4 +1,4 @@
-<!DOCTYPE html>https://github.com/Camel0626/camel0626.github.io/tree/main/FinalProject
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,17 +6,180 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
 </head>
 <body>
     <header>
-        <h2>LOGO</h2>
-        <nav>
-        <a href="#">Resume</a>
-        <a href="#">Project</a>
-        <a href="#">About Me</a>
-        <button>Contact</button>
+        <h2><a href="#" onclick="showSections(['Resume', 'Project', 'About-Me'])">LOGO</a></h2>
+        <nav class="navigation">
+        <a href="#Resume-1" onclick="showSection('Resume-1')">Resume</a>
+        <a href="#Project-1" onclick="showSection('Project-1')">Project</a>
+        <a href="#About-Me-1" onclick="showSection('About-Me-1')">About Me</a>
+
+          
+          
+        <button class="button-popup">Contact</button>
       </nav>
       </header>
+  
+  
+  <div class="wrapper" id="wrapper">
+    <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+    <div class="formbox login">
+      <h2>Contact with me</h2>
+      <form action="###">
+        <div class="input-box">
+          <span class="icon"><ion-icon name="person"></ion-icon></span>
+          <input type="text" required>
+          <label>Name</label>
+          </div>
+          <div class="input-box">
+          <span class="icon"><ion-icon name="mail"></ion-icon></span>
+          <input type="email" required>
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="chatbox-ellipses"></ion-icon></span>
+          <input type="text" size="30" placeholder="Type Something">
+        </div>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+  </div>
+  
+      <section id="Resume">
+        <h2 class="section-title">Resume</h2>
+        <div class="Resume-pic-name">
+            <img src="https://media.cnn.com/api/v1/images/stellar/prod/220818142713-dogs-tears-emotions-wellness-stock.jpg?c=16x9&q=h_720,w_1280,c_fill" alt="pic" class="profilepic">
+            <h2 id="name">許明哲</h2>
+        </div>
+        <div class="Resume-about-me">
+          <ul class="Resume-text">
+            <li>畢業學校：國立中正大學 經濟學系</li>
+            <li>手機：0909-170-626</li>
+            <li>Email：<a href="mailto:mingzhe9026@gmail.com">mingzhe9026@gmail.com</a></li>
+            <li>聯絡地址：桃園市桃園區吉昌街98號4樓</li>
+          </ul>    
+        </div>
+      </section>
+  
+  <section id="Resume-1">
+        <h2 class="section-title">Resume</h2>
+        <div class="Resume-pic-name">
+            <img src="https://media.cnn.com/api/v1/images/stellar/prod/220818142713-dogs-tears-emotions-wellness-stock.jpg?c=16x9&q=h_720,w_1280,c_fill" alt="pic" class="profilepic">
+            <h2 id="name">許明哲</h2>
+        </div>
+        <div class="Resume-about-me">
+          <ul class="Resume-text">
+            <li>畢業學校：國立中正大學 經濟學系</li>
+            <li>手機：0909-170-626</li>
+            <li>Email：<a href="mailto:mingzhe9026@gmail.com">mingzhe9026@gmail.com</a></li>
+            <li>聯絡地址：桃園市桃園區吉昌街98號4樓</li>
+          </ul>    
+        </div>
+      </section>
+
+  
+      <section id="Project">
+        <h2 class="section-title">Project</h2>
+        <ul class="Project-links">
+          <li class="Project-link"><a href="https://codepen.io/Camel9026/pen/zYJNEmg">第一個網站練習</a></li>
+            <p>在freecodecamp中所學習到的網站基本框架及CSS所建構出來的網站。</p>
+          
+          <li class="Project-link"><a href="https://www.figma.com/file/MIpun6oezYT0OZNNIFPn2O/Untitled?node-id=0%3A1&t=lOqSK8ZrjAgxpBVA-0">Figma icon 練習</a></li>
+            <p>Hahow 線上課程實作練習。</p>
+          
+          <li class="Project-link"><a href="https://camel0626.github.io/python-practise.html">Python 資料抓取練習</a></li>
+            <p>在系上修習 Python 相關課程，課後練習成果。</p>
+          
+        </ul>
+      </section>
+
+  <section id="Project-1">
+        <h2 class="section-title">Project</h2>
+        <ul class="Project-links">
+          <li class="Project-link"><a href="https://codepen.io/Camel9026/pen/zYJNEmg">第一個網站練習</a></li>
+            <p>在freecodecamp中所學習到的網站基本框架及CSS所建構出來的網站。</p>
+          
+          <li class="Project-link"><a href="https://www.figma.com/file/MIpun6oezYT0OZNNIFPn2O/Untitled?node-id=0%3A1&t=lOqSK8ZrjAgxpBVA-0">Figma icon 練習</a></li>
+            <p>Hahow 線上課程實作練習。</p>
+          
+          <li class="Project-link"><a href="https://camel0626.github.io/python-practise.html">Python 資料抓取練習</a></li>
+            <p>在系上修習 Python 相關課程，課後練習成果。</p>
+          
+        </ul>
+      </section>
+  
+  <section id="About-Me">
+        <h2 class="section-title">About Me</h2>
+        <ul class="Subjects">
+          <li class="Subject">主動且有責任感</li>   
+            <p class="Subject-text">在各個職位上，我都會主動去做當時應該去做的事情，且在被指派的任務時，我一定會努力達成，遇到困難時也會盡己所能。</p>
+          <li class="Subject">謹慎且理性</li>
+          <p class="Subject-text">在做任何事情時，我都會謹慎處理，必要時會列待做清單，確保我負責的任務是按照計畫進行的。若遇到問題或是突發狀況，也會理性地去解決問題，並在事後檢討改善。</p>
+          <li class="Subject">熱愛學習，喜歡接觸新的事物</li>
+          <p class="Subject-text">在學習的過程中，我發現自己喜歡接觸新的知識，也熱愛學習及探索新知識的過程，汲取新知總是令我振奮。我也喜歡與不同知識領域的人交流，我覺得除了學到不同領域的知識、不同人的處事態度，同時也能增強自己的溝通能力。</p>
+          <li class="Subject">學習程式語言，精進自己的資訊能力</li>
+          <p class="Subject-text">最近開始學習前端相關的技能，例如在 Hahow 上學習如何使用 Figma 設計網站；在 Free Code Camp 自學 HTML 及 CSS，目前的規畫是在今年拿到該網站 HTML&CSS 的證照。</p>
+          
+        </ul>
+      </section>
+  <section id="About-Me-1">
+        <h2 class="section-title">About Me</h2>
+        <ul class="Subjects">
+          <li class="Subject">主動且有責任感</li>   
+            <p class="Subject-text">在各個職位上，我都會主動去做當時應該去做的事情，且在被指派的任務時，我一定會努力達成，遇到困難時也會盡己所能。</p>
+          <li class="Subject">謹慎且理性</li>
+          <p class="Subject-text">在做任何事情時，我都會謹慎處理，必要時會列待做清單，確保我負責的任務是按照計畫進行的。若遇到問題或是突發狀況，也會理性地去解決問題，並在事後檢討改善。</p>
+          <li class="Subject">熱愛學習，喜歡接觸新的事物</li>
+          <p class="Subject-text">在學習的過程中，我發現自己喜歡接觸新的知識，也熱愛學習及探索新知識的過程，汲取新知總是令我振奮。我也喜歡與不同知識領域的人交流，我覺得除了學到不同領域的知識、不同人的處事態度，同時也能增強自己的溝通能力。</p>
+          <li class="Subject">學習程式語言，精進自己的資訊能力</li>
+          <p class="Subject-text">最近開始學習前端相關的技能，例如在 Hahow 上學習如何使用 Figma 設計網站；在 Free Code Camp 自學 HTML 及 CSS，目前的規畫是在今年拿到該網站 HTML&CSS 的證照。</p>
+          
+        </ul>
+      </section>
+  
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="script.js"></script>
+  <script>
+    // 顯示目標 Section，隱藏其他 Section
+    function showSection(sectionId) {
+        var sections = document.getElementsByTagName('section');
+
+        for (var i = 0; i < sections.length; i++) {
+            if (sections[i].id === sectionId) {
+                sections[i].style.display = 'flex';
+            } else {
+                sections[i].style.display = 'none';
+            }
+        }
+    }
+    function showAllSections() {
+        var sections = document.getElementsByTagName('section');
+
+        for (var i = 0; i < sections.length; i++) {
+            sections[i].style.display = 'flex';
+        }
+    }
     
+    // 顯示特定的 Sections
+    function showSections(sectionIds) {
+        var sections = document.getElementsByTagName('section');
+
+        for (var i = 0; i < sections.length; i++) {
+            var section = sections[i];
+            var sectionId = section.getAttribute('id');
+
+            // 檢查該 Section 是否在要顯示的列表中
+            if (sectionIds.indexOf(sectionId) !== -1) {
+                section.style.display = 'flex';
+            } else {
+                section.style.display = 'none';
+            }
+        }
+    }
+</script>
 </body>
 </html>
